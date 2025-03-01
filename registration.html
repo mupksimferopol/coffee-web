@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+      <div class="container main-container">
+          <div class="header__inner">
+              <a href=""><p class="header__logo">Filtro</p></a>
+              <nav>
+                  <ul>
+                      <li><a href="">Главная</a></li>
+                      <li><a href="">О нас</a></li>
+                      <li><a href="">Бренды</a></li>
+                      <li><a href="">Обратная связь</a></li>
+                  </ul>
+              </nav>
+              <div class="header__buttons">
+                  <div class="header__btnlogin">
+                      <a href="">Регистрация/Войти</a>
+                  </div>
+                  <div class="header__btnlogin">
+                      <img src="img/apple logo.png" alt="">
+                      <a href="">Приложение</a>
+                  </div>
+              </div>
+          </div>
+
+
+
+
+          <p class="header__text">Зарядись энергией с кофе</p>
+          <p class="header__title">Начни свой день с чашки хорошего кофе
+          </p>
+          <div class="header__btn-explore-us">
+              <a href="nav.html">Подробнее</a>
+          </div>
+
+
+      </div>
+  </header>
+  <main>
+    <section>
+      <section>
+        <div class="container10">
+          <div class="section-registration__inner">
+            
+            <h2 class="reg--title">Регистрация</h2>
+            <div class="reg-form">
+            <form action="index.html">
+              <div class="form-group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required placeholder="Ваше имя">
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@email.com">
+              </div>
+              <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password1" id="password" name="password" required placeholder="Минимум 8 символов">
+              </div>
+              <div class="form-group">
+                <label for="confirmPassword">Подтвердите пароль:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Повторите пароль">
+              </div>
+        
+              <button type="submit">Зарегистрироваться</button>
+            </form>
+          </div>
+            <p class="reg--enter">Уже зарегистрированы? <a href="vhod.html">Войти</a></p>
+          </div>
+          
+        </div>
+      </section>
+      <script>
+        document.getElementById("registrationForm").addEventListener("submit", function (event) {
+          event.preventDefault();
+    
+          const password = document.getElementById("password").value;
+          const confirmPassword = document.getElementById("confirmPassword").value;
+    
+          if (password !== confirmPassword) {
+            alert("Пароли не совпадают");
+            return;
+          }
+    
+          if (password.length < 8) {
+            alert("Пароль должен содержать не менее 8 символов");
+            return;
+          }
+    
+          alert("Регистрация прошла успешно!");
+        });
+      </script>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+        <p class="footer--title">Get in Touch with us</p>
+        <div class="footer-info__row">
+            <div class="div1">
+            <p class="footer--title1">Мерч</p>
+            <div class="footer--text1">
+                <p>Футболки</p>
+                <p>Кепки</p>
+                <p>Маски</p>
+            </div>
+        </div>
+        <div class="div1">
+            <p class="footer--title1">Франшиза</p>
+            <div class="footer--text1">
+                <p>Кофейни</p>
+                <p>Кофемашины</p>
+                <p>Обратная связь</p>
+            </div>
+        </div>
+        <div>
+            <p class="footer--title1">О нас</p>
+            <div class="footer--text1">
+                <p>Реклама</p>
+                <p>Работа</p>
+                <p>Юр. информация</p>
+            </div>
+        </div>
+        <div>
+           <p class="footer--title1">Мы в соцсетях</p>
+           <a href=""><img src="/img/pinterest.png" alt=""></a><a href=""><img src="/img/Fb.png" alt=""></a><a href=""><img src="/img/twitter.png" alt=""></a><a href=""><img src="/img/pinterest.png" alt=""></a> 
+        </div>
+        </div>
+        <br class="line">
+        <br>
+        <div>
+            <img src="/img/copyright.png" alt="">
+            <p class="footer--copyright">Filtro Все права защищены</p>
+        </div>
+    </div>
+    
+</footer>
+</body>
+</html>
